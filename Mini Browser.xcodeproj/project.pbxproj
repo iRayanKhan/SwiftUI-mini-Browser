@@ -11,6 +11,7 @@
 		27BACBDF2B43C8B200AB841B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BACBDE2B43C8B200AB841B /* ContentView.swift */; };
 		27BACBE12B43C8B400AB841B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BACBE02B43C8B400AB841B /* Assets.xcassets */; };
 		27BACBE42B43C8B400AB841B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BACBE32B43C8B400AB841B /* Preview Assets.xcassets */; };
+		27BACBEF2B43C91E00AB841B /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BACBEE2B43C91E00AB841B /* BrowserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		27BACBDE2B43C8B200AB841B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		27BACBE02B43C8B400AB841B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27BACBE32B43C8B400AB841B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27BACBEE2B43C91E00AB841B /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,10 @@
 		27BACBDB2B43C8B200AB841B /* Mini Browser */ = {
 			isa = PBXGroup;
 			children = (
-				27BACBDC2B43C8B200AB841B /* Mini_BrowserApp.swift */,
-				27BACBDE2B43C8B200AB841B /* ContentView.swift */,
+				27BACBED2B43C90C00AB841B /* Views */,
+				27BACBEC2B43C90700AB841B /* Models */,
+				27BACBEB2B43C90100AB841B /* Extensions */,
+				27BACBEA2B43C8FB00AB841B /* Services */,
 				27BACBE02B43C8B400AB841B /* Assets.xcassets */,
 				27BACBE22B43C8B400AB841B /* Preview Content */,
 			);
@@ -65,6 +69,37 @@
 				27BACBE32B43C8B400AB841B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27BACBEA2B43C8FB00AB841B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		27BACBEB2B43C90100AB841B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27BACBEC2B43C90700AB841B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27BACBED2B43C90C00AB841B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27BACBDC2B43C8B200AB841B /* Mini_BrowserApp.swift */,
+				27BACBDE2B43C8B200AB841B /* ContentView.swift */,
+				27BACBEE2B43C91E00AB841B /* BrowserView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 			files = (
 				27BACBDF2B43C8B200AB841B /* ContentView.swift in Sources */,
 				27BACBDD2B43C8B200AB841B /* Mini_BrowserApp.swift in Sources */,
+				27BACBEF2B43C91E00AB841B /* BrowserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
