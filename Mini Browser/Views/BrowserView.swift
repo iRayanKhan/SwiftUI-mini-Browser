@@ -8,10 +8,47 @@
 import SwiftUI
 
 struct BrowserView: View {
+    @StateObject private var viewModel = WebViewStateModel()
+
+    private var webView: WebView {
+        WebView(urlString: "https://wholelotta.red", viewModel: viewModel)
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            webView
+            HStack {
+                Button(action: goBack) {
+                    Image(systemName: "arrow.backward")
+                }
+                .disabled(!viewModel.canGoBack)
+
+                Button(action: goForward) {
+                    Image(systemName: "arrow.forward")
+                }
+                .disabled(!viewModel.canGoForward)
+
+                Button(action: reload) {
+                    Image(systemName: "arrow.clockwise")
+                }
+            }.padding(.horizontal)
+        }
+    }
+
+    func goBack() {
+        viewModel.webView.goBack()
+    }
+
+    func goForward() {
+        viewModel.webView.goForward()
+    }
+
+    func reload() {
+        viewModel.webView.reload()
     }
 }
+
+
 
 #Preview {
     BrowserView()

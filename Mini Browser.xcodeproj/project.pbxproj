@@ -12,6 +12,8 @@
 		27BACBE12B43C8B400AB841B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BACBE02B43C8B400AB841B /* Assets.xcassets */; };
 		27BACBE42B43C8B400AB841B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BACBE32B43C8B400AB841B /* Preview Assets.xcassets */; };
 		27BACBEF2B43C91E00AB841B /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BACBEE2B43C91E00AB841B /* BrowserView.swift */; };
+		27BACBF12B43C96400AB841B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BACBF02B43C96400AB841B /* WebView.swift */; };
+		27BACBF52B43CA5300AB841B /* WebStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BACBF42B43CA5300AB841B /* WebStateViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		27BACBE02B43C8B400AB841B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27BACBE32B43C8B400AB841B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27BACBEE2B43C91E00AB841B /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+		27BACBF02B43C96400AB841B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		27BACBF42B43CA5300AB841B /* WebStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebStateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		27BACBEC2B43C90700AB841B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				27BACBF42B43CA5300AB841B /* WebStateViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 				27BACBDC2B43C8B200AB841B /* Mini_BrowserApp.swift */,
 				27BACBDE2B43C8B200AB841B /* ContentView.swift */,
 				27BACBEE2B43C91E00AB841B /* BrowserView.swift */,
+				27BACBF02B43C96400AB841B /* WebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27BACBDF2B43C8B200AB841B /* ContentView.swift in Sources */,
+				27BACBF52B43CA5300AB841B /* WebStateViewModel.swift in Sources */,
+				27BACBF12B43C96400AB841B /* WebView.swift in Sources */,
 				27BACBDD2B43C8B200AB841B /* Mini_BrowserApp.swift in Sources */,
 				27BACBEF2B43C91E00AB841B /* BrowserView.swift in Sources */,
 			);
