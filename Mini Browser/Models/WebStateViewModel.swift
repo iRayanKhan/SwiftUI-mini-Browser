@@ -11,6 +11,7 @@ import WebKit
 class WebViewStateModel: NSObject, ObservableObject, WKNavigationDelegate {
     @Published var canGoBack: Bool = false
     @Published var canGoForward: Bool = false
+    @Published var currentURL: URL?
 
     var webView: WKWebView = WKWebView()
 
@@ -27,6 +28,7 @@ class WebViewStateModel: NSObject, ObservableObject, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         canGoBack = webView.canGoBack
         canGoForward = webView.canGoForward
+        currentURL = webView.url
     }
 }
 

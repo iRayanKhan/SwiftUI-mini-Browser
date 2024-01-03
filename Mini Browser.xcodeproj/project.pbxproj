@@ -14,6 +14,7 @@
 		27BACBEF2B43C91E00AB841B /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BACBEE2B43C91E00AB841B /* BrowserView.swift */; };
 		27BACBF12B43C96400AB841B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BACBF02B43C96400AB841B /* WebView.swift */; };
 		27BACBF52B43CA5300AB841B /* WebStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BACBF42B43CA5300AB841B /* WebStateViewModel.swift */; };
+		27F040C12B45389D00C6D1EC /* ShareSheet+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F040C02B45389D00C6D1EC /* ShareSheet+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		27BACBEE2B43C91E00AB841B /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
 		27BACBF02B43C96400AB841B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		27BACBF42B43CA5300AB841B /* WebStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebStateViewModel.swift; sourceTree = "<group>"; };
+		27F040C02B45389D00C6D1EC /* ShareSheet+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShareSheet+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		27BACBEB2B43C90100AB841B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				27F040C02B45389D00C6D1EC /* ShareSheet+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27BACBDF2B43C8B200AB841B /* ContentView.swift in Sources */,
+				27F040C12B45389D00C6D1EC /* ShareSheet+Extension.swift in Sources */,
 				27BACBF52B43CA5300AB841B /* WebStateViewModel.swift in Sources */,
 				27BACBF12B43C96400AB841B /* WebView.swift in Sources */,
 				27BACBDD2B43C8B200AB841B /* Mini_BrowserApp.swift in Sources */,
