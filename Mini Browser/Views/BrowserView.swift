@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct BrowserView: View {
     @StateObject private var viewModel = WebViewStateModel()
     @State private var showShareSheet = false
@@ -36,18 +38,29 @@ struct BrowserView: View {
                         .font(.system(size: 20, weight: .bold))
                 }
                 
-                Button(action: toggleShareSheet) {
-                    Image(systemName: "square.and.arrow.up")
-                        .font(.system(size: 20, weight: .bold))
+                if #available(iOS 16.0, *) {
+                    if let url = viewModel.currentURL {
+                        ShareLink(item: url) {
+                            Image(systemName: "square.and.arrow.up")
+                                .font(.system(size: 20, weight: .bold))
+                        }
+                    }
+                } else {
+                    Button(action: toggleShareSheet) {
+                        Image(systemName: "square.and.arrow.up")
+                            .font(.system(size: 20, weight: .bold))
+                    }
                 }
             }.padding(.horizontal)
+            
             VStack(alignment: .leading) {
                 Text(viewModel.currentURL?.absoluteString ?? "")
                     .lineLimit(1)
                     .minimumScaleFactor(0.2)
                     .padding(.horizontal)
             }
-        }.sheet(isPresented: $showShareSheet) {
+        }
+        .sheet(isPresented: $showShareSheet) {
             ShareSheet(url: viewModel.currentURL!)
         }
     }
@@ -68,6 +81,7 @@ struct BrowserView: View {
         viewModel.webView.reload()
     }
 }
+
 
 
 

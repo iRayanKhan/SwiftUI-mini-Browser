@@ -11,12 +11,12 @@ import SwiftUI
 
 struct ShareSheet: UIViewControllerRepresentable {
     let url: URL
-
+    
     func makeUIViewController(context: UIViewControllerRepresentableContext<ShareSheet>) -> UIActivityViewController {
         let controller = UIActivityViewController(activityItems: [url], applicationActivities: nil)
         return controller
     }
-
+    
     func updateUIViewController(_ uiViewController: UIActivityViewController, context: UIViewControllerRepresentableContext<ShareSheet>) {
     }
 }
